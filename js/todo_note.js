@@ -44,6 +44,7 @@ $(document).ready(function(){
 		});
 
 		$(document).on('click', ".noteTitle", function(){ 
+			cancelNote();
 		   var thisNote= $(this).parent().find("textarea");
 		   thisNote.is(":hidden") ? thisNote.show() :thisNote.hide();
 		});
@@ -88,7 +89,7 @@ $(document).ready(function(){
 		            	<span class='noteTitle'>"+data[i]['title']+"</span>\
 		            	<div class='noteIcon'><span class='glyphicon glyphicon-edit' onClick=Edit(this,"+data[i]['id']+")></span>\
 		            	<span class='glyphicon glyphicon-trash' onClick=deleteNote("+data[i]['id']+")></span></div><br/>\
-		            	<textarea style='display:none' class='disabled' style='width:100%' readonly>"+data[i]['context']+"</textarea>\
+		            	<textarea style='display:none' style='width:100%' readonly>"+data[i]['context']+"</textarea>\
 		            	<div class='updateNote' style='display:none'></div>\
 		            	</div>";
 
@@ -156,10 +157,10 @@ $(document).ready(function(){
 
 		var markup = 
             	"<div style='width:80%'>\
-            	<input type='text' name='updateTitle' value='"+thisTile+"'  style='width:100%'/>\
+            	<input type='text' name='updateTitle' value='"+thisTile+"'  style='width:100%' class='form-control'/>\
             	<textarea name='updateContext' style='width:100%'>"+thisContext+"</textarea><br/>\
-            	<button onClick='updateNote(this,"+noteID+")'>Save</button>\
-            	<button onClick='cancelNote(this)'>Cancel</button>\
+            	<button onClick='updateNote(this,"+noteID+")' class='btn'>Save</button>\
+            	<button onClick='cancelNote(this)' class='btn'>Cancel</button>\
             	</div>";
 
          updateNoteArea.show();
