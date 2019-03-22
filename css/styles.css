@@ -1,0 +1,55 @@
+.header {
+    width: 800px;
+    height: 80px;
+    text-align: center;
+    background-color: #BDBDBD;
+}
+
+body{
+    margin-left: 20px;
+}
+
+.footer {
+    background-color: #BDBDBD;
+    text-align: center;
+}
+
+.todo {
+    display: inline-block;
+    background-color: #00ddff;
+    width: 600px;
+    vertical-align:text-top;
+    height: 600px;
+}
+
+.note {
+    display: inline-block;
+    background-color: #E6E6E6;
+    width: 600px;
+    vertical-align:text-top;
+    height: 600px;
+}
+
+.noteIcon{
+    display: absolute;
+    float: right;
+}
+.textBox{
+    width: 100%;
+}
+
+.updateNote{
+    position: relative;
+    margin-left: 15px;
+    text-align: left;
+}
+.noteRow{
+    margin-right: 10px; 
+    margin-left: 10px; 
+    border-bottom: 1px solid black;
+}
+
+a{
+    display:block;
+    padding:5px
+}

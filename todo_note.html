@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/todo_note.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="messageArea"><ul id="messageList"></ul></div>
+	<div class='todo'>
+		<h3>TODO</h3>
+		<hr>
+		<div class="textBox">
+			<input type="text" id="todoAdd" name="todoAdd" placeholder="Create New TODO item" style='width:80%'>
+			<button id="createTodo">Create</button>
+		</div>
+		<table id="todoList" style='width:100%'></table>
+	</div>
+
+	<div class='note'>
+		<h3>Notes</h3>
+		<hr>
+		<div class="textBox">
+			<input type="text" id="noteAdd" name="noteAdd" placeholder="Create New Note" style='width:80%'/>
+			<button id="createNote">Create</button>
+			<textarea style='width:100%' id="context" name="context"></textarea>
+		</div>
+		<div id="noteList"></div>
+	</div>
+	
+</body>
+</html>
